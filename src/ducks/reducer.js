@@ -21,6 +21,7 @@ const initialState = {
 //setting up action types
 const UPDATE_LOAN_TYPE = 'UPDATE_LOAN_TYPE';
 const UPDATE_PROPERTY_TYPE = 'UPDATE_PROPERTY_TYPE';
+const UPDATE_CITY = 'UPDATE_CITY';
 
 //Object.assign in this case creates an empty object and places state on it, then updates keys
 function reducer(state = initialState, action){
@@ -30,6 +31,9 @@ function reducer(state = initialState, action){
 
         case UPDATE_PROPERTY_TYPE:
             return Object.assign({}, state, {propertyType: action.payload});
+
+        case UPDATE_CITY:
+            return Object.assign({}, state, {city: action.payload});
         
         default: return state;
     }
@@ -47,6 +51,13 @@ export function updatePropertyType(property){
     return{
         type: UPDATE_PROPERTY_TYPE,
         payload: property
+    }
+}
+
+export function updateCity(city){
+    return{
+        type: UPDATE_CITY,
+        payload: city
     }
 }
 

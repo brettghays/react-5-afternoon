@@ -44,5 +44,5 @@ let mapStateToProps = (state) => {
         loanType,
         propertyType
     }
-}
+};
 export default connect(mapStateToProps,{updateLoanType,updatePropertyType})(WizardOne); 
