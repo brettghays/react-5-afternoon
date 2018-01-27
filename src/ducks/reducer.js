@@ -55,7 +55,7 @@ function reducer(state = initialState, action){
             return Object.assign({}, state, {found: action.payload});
 
         case UPDATE_REAL_ESTATE_AGENT:
-            return Object.assign( {}, state, { realEstateAgent: action.payload } );
+            return Object.assign( {}, state, {realEstateAgent: action.payload});
 
         case UPDATE_COST:
             return Object.assign({}, state, {cost: action.payload});
