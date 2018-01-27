@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
+
 import './App.css';
 import router from './router'
 
@@ -151,4 +153,5 @@ class App extends Component {
   }
 }
 
-export default App;
+let mapStateToProps = (state) => state;
+export default connect(mapStateToProps)(App);
