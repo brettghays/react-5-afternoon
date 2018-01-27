@@ -147,4 +147,4 @@ let mapStateToProps = (state) => {
         email: state.email
     }
 }
-export default connectAdvanced(mapStateToProps)(WizardEleven);
+export default connect(mapStateToProps)(WizardEleven);
