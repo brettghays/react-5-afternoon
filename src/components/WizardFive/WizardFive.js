@@ -12,7 +12,7 @@ class WizardFive extends Component {
                     <div className="vert-align">    
 
                     <p>Are you currently working with a real estate agent?</p> <br />
-                    <div className="row">true
+                    <div className="row">
                         <Link to="/wSix"><button onClick={(e) => updateRealEstateAgent(true)}>Yes</button></Link>
                         <Link to="/wSix"><button onClick={(e) => updateRealEstateAgent(false)}>No </button></Link>
                     </div>
