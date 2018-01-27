@@ -48,6 +48,6 @@ export function updatePropertyType(property){
         type: UPDATE_PROPERTY_TYPE,
         payload: property
     }
-}:
+}
 
 export default reducer;
